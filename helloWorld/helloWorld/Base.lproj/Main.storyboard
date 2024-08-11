@@ -1,24 +1,156 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Pretendard-Regular.ttf">
+            <string>Pretendard-Regular</string>
+        </array>
+    </customFonts>
     <scenes>
-        <!--View Controller-->
+        <!--Title-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="helloWorld" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PgL-2f-KSi">
+                                <rect key="frame" x="157" y="68" width="0.0" height="0.0"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="NotoNastaliqUrdu" family="Noto Nastaliq Urdu" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="프로필 설정" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4ae-NI-t0c">
+                                <rect key="frame" x="160" y="79" width="73.666666666666686" height="19.333333333333329"/>
+                                <fontDescription key="fontDescription" name="Pretendard-Regular" family="Pretendard" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="icon_profile.png" translatesAutoresizingMaskIntoConstraints="NO" id="Zze-BS-Q9O">
+                                <rect key="frame" x="144.33333333333334" y="118.33333333333331" width="105" height="105"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="105" id="4bD-KP-FrU"/>
+                                    <constraint firstAttribute="height" constant="105" id="r9p-7Q-Bh0"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="닉네임" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kqT-g4-uqx">
+                                <rect key="frame" x="16.000000000000004" y="263.33333333333331" width="36.333333333333343" height="17"/>
+                                <fontDescription key="fontDescription" name="Pretendard-Regular" family="Pretendard" pointSize="14"/>
+                                <color key="textColor" red="0.43137254901960786" green="0.47450980392156861" blue="0.52549019607843139" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="사용할 닉네임을 설정해주세요." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9m0-yd-8oH">
+                                <rect key="frame" x="16" y="292.33333333333331" width="266" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="266" id="rio-BK-D1f"/>
+                                    <constraint firstAttribute="height" constant="31" id="uyk-fI-zPv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Pretendard-Regular" family="Pretendard" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="자기소개" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M7m-HS-3oR">
+                                <rect key="frame" x="16" y="363.33333333333331" width="49" height="17"/>
+                                <fontDescription key="fontDescription" name="Pretendard-Regular" family="Pretendard" pointSize="14"/>
+                                <color key="textColor" red="0.43137254899999999" green="0.47450980390000003" blue="0.52549019610000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="짧은 문장으로 본인을 소개해보세요." minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CVc-7a-Dbe">
+                                <rect key="frame" x="16" y="392.33333333333331" width="361.33333333333331" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="31" id="f9j-eE-NcL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Pretendard-Regular" family="Pretendard" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y2e-jU-6fC">
+                                <rect key="frame" x="294" y="292.33333333333331" width="83.333333333333314" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="31" id="5qH-eF-lhI"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="85" id="AYZ-2G-uRp"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="31" id="nlO-pO-8bz"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="중복확인"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C3I-Ve-1M2">
+                                <rect key="frame" x="16" y="768" width="361.33333333333331" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="8gH-ls-qZP"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="가입 완료">
+                                    <color key="baseBackgroundColor" systemColor="systemGray4Color"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="btnSend:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Bbl-hx-wMP"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vVa-bP-fsR">
+                                <rect key="frame" x="16" y="678" width="361.33333333333331" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="let-og-xAE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Pretendard-Regular" family="Pretendard" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vVa-bP-fsR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="1xJ-gw-Gsy"/>
+                            <constraint firstItem="Y2e-jU-6fC" firstAttribute="top" secondItem="9m0-yd-8oH" secondAttribute="top" id="2BT-O2-v6c"/>
+                            <constraint firstItem="4ae-NI-t0c" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="160" id="5dZ-Ty-b86"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="CVc-7a-Dbe" secondAttribute="trailing" constant="16" id="CN2-TM-m46"/>
+                            <constraint firstItem="C3I-Ve-1M2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="DJQ-bf-okX"/>
+                            <constraint firstItem="kqT-g4-uqx" firstAttribute="top" secondItem="Zze-BS-Q9O" secondAttribute="bottom" constant="40" id="E2C-wP-m4G"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="vVa-bP-fsR" secondAttribute="trailing" constant="16" id="EqH-k5-qWH"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Zze-BS-Q9O" secondAttribute="trailing" constant="144" id="GH4-kG-BCJ"/>
+                            <constraint firstItem="kqT-g4-uqx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="GSu-Sa-UYG"/>
+                            <constraint firstItem="Y2e-jU-6fC" firstAttribute="leading" secondItem="9m0-yd-8oH" secondAttribute="trailing" constant="12" id="GjI-F8-A1I"/>
+                            <constraint firstItem="4ae-NI-t0c" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="Of2-2B-Ink"/>
+                            <constraint firstItem="M7m-HS-3oR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="OtT-se-DX3"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Y2e-jU-6fC" secondAttribute="trailing" constant="16" id="P2W-aZ-ba1"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="C3I-Ve-1M2" secondAttribute="trailing" constant="16" id="QUB-iW-VKZ"/>
+                            <constraint firstItem="CVc-7a-Dbe" firstAttribute="top" secondItem="M7m-HS-3oR" secondAttribute="bottom" constant="12" id="Tnw-eJ-TIR"/>
+                            <constraint firstItem="M7m-HS-3oR" firstAttribute="top" secondItem="9m0-yd-8oH" secondAttribute="bottom" constant="40" id="V74-mv-O8i"/>
+                            <constraint firstItem="9m0-yd-8oH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="aHz-m2-Ziu"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="C3I-Ve-1M2" secondAttribute="bottom" id="amU-ZV-psl"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="CVc-7a-Dbe" secondAttribute="trailing" constant="16" id="hOX-U8-fZf"/>
+                            <constraint firstItem="C3I-Ve-1M2" firstAttribute="top" secondItem="vVa-bP-fsR" secondAttribute="bottom" constant="50" id="hcy-GQ-rEe"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="4ae-NI-t0c" secondAttribute="trailing" constant="159.5" id="kTC-Rj-yKf"/>
+                            <constraint firstItem="CVc-7a-Dbe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="l4B-7t-OwH"/>
+                            <constraint firstItem="9m0-yd-8oH" firstAttribute="top" secondItem="kqT-g4-uqx" secondAttribute="bottom" constant="12" id="o8J-A6-qii"/>
+                            <constraint firstItem="Zze-BS-Q9O" firstAttribute="top" secondItem="4ae-NI-t0c" secondAttribute="bottom" constant="20" id="ylE-AK-hpE"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Title" id="bQy-7L-Jeh"/>
+                    <connections>
+                        <outlet property="bottomText" destination="vVa-bP-fsR" id="ap6-Ub-p7q"/>
+                        <outlet property="introduce" destination="CVc-7a-Dbe" id="kDG-Kp-eoF"/>
+                        <outlet property="nickname" destination="9m0-yd-8oH" id="ppZ-3f-4MX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="64.885496183206101" y="3.5211267605633805"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="icon_profile.png" width="105" height="105"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray4Color">
+            <color red="0.81960784313725488" green="0.81960784313725488" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>
