@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		28707C932C67C928008C19D1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28707C922C67C928008C19D1 /* AppDelegate.swift */; };
 		28707C952C67C928008C19D1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28707C942C67C928008C19D1 /* SceneDelegate.swift */; };
-		28707C972C67C928008C19D1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28707C962C67C928008C19D1 /* ViewController.swift */; };
-		28707C9A2C67C928008C19D1 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 28707C992C67C928008C19D1 /* Base */; };
 		28707C9C2C67C929008C19D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28707C9B2C67C929008C19D1 /* Assets.xcassets */; };
 		28707C9F2C67C929008C19D1 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 28707C9E2C67C929008C19D1 /* Base */; };
 		28707CB22C688939008C19D1 /* Pretendard-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 28707CA92C688939008C19D1 /* Pretendard-ExtraBold.ttf */; };
@@ -23,14 +21,14 @@
 		28707CB92C688939008C19D1 /* Pretendard-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 28707CB02C688939008C19D1 /* Pretendard-Black.ttf */; };
 		28707CBA2C688939008C19D1 /* Pretendard-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 28707CB12C688939008C19D1 /* Pretendard-Medium.ttf */; };
 		28707CBC2C6894EA008C19D1 /* icon_profile.png in Resources */ = {isa = PBXBuildFile; fileRef = 28707CBB2C6894EA008C19D1 /* icon_profile.png */; };
+		28707CBE2C74697F008C19D1 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28707CBD2C74697F008C19D1 /* MainView.swift */; };
+		28707CC32C747DC9008C19D1 /* TextStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28707CC22C747DC9008C19D1 /* TextStyle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		28707C8F2C67C928008C19D1 /* helloWorld.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = helloWorld.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		28707C8F2C67C928008C19D1 /* helloWorld_swift_ui.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = helloWorld_swift_ui.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		28707C922C67C928008C19D1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		28707C942C67C928008C19D1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		28707C962C67C928008C19D1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		28707C992C67C928008C19D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		28707C9B2C67C929008C19D1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		28707C9E2C67C929008C19D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		28707CA02C67C929008C19D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -44,6 +42,8 @@
 		28707CB02C688939008C19D1 /* Pretendard-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Black.ttf"; sourceTree = "<group>"; };
 		28707CB12C688939008C19D1 /* Pretendard-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Medium.ttf"; sourceTree = "<group>"; };
 		28707CBB2C6894EA008C19D1 /* icon_profile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_profile.png; sourceTree = "<group>"; };
+		28707CBD2C74697F008C19D1 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		28707CC22C747DC9008C19D1 /* TextStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextStyle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,7 +60,7 @@
 		28707C862C67C928008C19D1 = {
 			isa = PBXGroup;
 			children = (
-				28707C912C67C928008C19D1 /* helloWorld */,
+				28707C912C67C928008C19D1 /* helloWorld_swift_ui */,
 				28707C902C67C928008C19D1 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -68,25 +68,24 @@
 		28707C902C67C928008C19D1 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				28707C8F2C67C928008C19D1 /* helloWorld.app */,
+				28707C8F2C67C928008C19D1 /* helloWorld_swift_ui.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		28707C912C67C928008C19D1 /* helloWorld */ = {
+		28707C912C67C928008C19D1 /* helloWorld_swift_ui */ = {
 			isa = PBXGroup;
 			children = (
 				28707CA62C688561008C19D1 /* assets */,
 				28707C922C67C928008C19D1 /* AppDelegate.swift */,
 				28707C942C67C928008C19D1 /* SceneDelegate.swift */,
-				28707C962C67C928008C19D1 /* ViewController.swift */,
 				28707CBB2C6894EA008C19D1 /* icon_profile.png */,
+				28707CBD2C74697F008C19D1 /* MainView.swift */,
 				28707C9B2C67C929008C19D1 /* Assets.xcassets */,
-				28707C982C67C928008C19D1 /* Main.storyboard */,
 				28707C9D2C67C929008C19D1 /* LaunchScreen.storyboard */,
 				28707CA02C67C929008C19D1 /* Info.plist */,
 			);
-			path = helloWorld;
+			path = helloWorld_swift_ui;
 			sourceTree = "<group>";
 		};
 		28707CA62C688561008C19D1 /* assets */ = {
@@ -94,6 +93,7 @@
 			children = (
 				28707CA72C688574008C19D1 /* font */,
 				28707CA82C688579008C19D1 /* icon */,
+				28707CC22C747DC9008C19D1 /* TextStyle.swift */,
 			);
 			path = assets;
 			sourceTree = "<group>";
@@ -124,9 +124,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		28707C8E2C67C928008C19D1 /* helloWorld */ = {
+		28707C8E2C67C928008C19D1 /* helloWorld_swift_ui */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 28707CA32C67C929008C19D1 /* Build configuration list for PBXNativeTarget "helloWorld" */;
+			buildConfigurationList = 28707CA32C67C929008C19D1 /* Build configuration list for PBXNativeTarget "helloWorld_swift_ui" */;
 			buildPhases = (
 				28707C8B2C67C928008C19D1 /* Sources */,
 				28707C8C2C67C928008C19D1 /* Frameworks */,
@@ -136,9 +136,9 @@
 			);
 			dependencies = (
 			);
-			name = helloWorld;
+			name = helloWorld_swift_ui;
 			productName = helloWorld;
-			productReference = 28707C8F2C67C928008C19D1 /* helloWorld.app */;
+			productReference = 28707C8F2C67C928008C19D1 /* helloWorld_swift_ui.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -156,7 +156,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 28707C8A2C67C928008C19D1 /* Build configuration list for PBXProject "helloWorld" */;
+			buildConfigurationList = 28707C8A2C67C928008C19D1 /* Build configuration list for PBXProject "helloWorld_swift_ui" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -169,7 +169,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				28707C8E2C67C928008C19D1 /* helloWorld */,
+				28707C8E2C67C928008C19D1 /* helloWorld_swift_ui */,
 			);
 		};
 /* End PBXProject section */
@@ -186,7 +186,6 @@
 				28707CB82C688939008C19D1 /* Pretendard-Regular.ttf in Resources */,
 				28707C9F2C67C929008C19D1 /* Base in Resources */,
 				28707CB32C688939008C19D1 /* Pretendard-SemiBold.ttf in Resources */,
-				28707C9A2C67C928008C19D1 /* Base in Resources */,
 				28707CB42C688939008C19D1 /* Pretendard-Bold.ttf in Resources */,
 				28707CBA2C688939008C19D1 /* Pretendard-Medium.ttf in Resources */,
 				28707CB22C688939008C19D1 /* Pretendard-ExtraBold.ttf in Resources */,
@@ -202,8 +201,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				28707C972C67C928008C19D1 /* ViewController.swift in Sources */,
+				28707CC32C747DC9008C19D1 /* TextStyle.swift in Sources */,
 				28707C932C67C928008C19D1 /* AppDelegate.swift in Sources */,
+				28707CBE2C74697F008C19D1 /* MainView.swift in Sources */,
 				28707C952C67C928008C19D1 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -211,14 +211,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		28707C982C67C928008C19D1 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				28707C992C67C928008C19D1 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		28707C9D2C67C929008C19D1 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -359,10 +351,9 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = helloWorld/Info.plist;
+				INFOPLIST_FILE = helloWorld_swift_ui/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -370,7 +361,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.sunjae.helloWorld;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sunjae.helloWorld_swift_ui;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -386,10 +377,9 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = helloWorld/Info.plist;
+				INFOPLIST_FILE = helloWorld_swift_ui/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -397,7 +387,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.sunjae.helloWorld;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sunjae.helloWorld_swift_ui;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -408,7 +398,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		28707C8A2C67C928008C19D1 /* Build configuration list for PBXProject "helloWorld" */ = {
+		28707C8A2C67C928008C19D1 /* Build configuration list for PBXProject "helloWorld_swift_ui" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				28707CA12C67C929008C19D1 /* Debug */,
@@ -417,7 +407,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		28707CA32C67C929008C19D1 /* Build configuration list for PBXNativeTarget "helloWorld" */ = {
+		28707CA32C67C929008C19D1 /* Build configuration list for PBXNativeTarget "helloWorld_swift_ui" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				28707CA42C67C929008C19D1 /* Debug */,

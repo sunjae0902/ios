@@ -11,23 +11,21 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        //        for family in UIFont.familyNames.sorted() {
-        //            let names = UIFont.fontNames(forFamilyName: family)
-        //            print("Family: \(family) Font names: \(names)")
-        //        }
-        // Do any additional setup after loading the view.
+        print(#function)
     }
     
-    @IBOutlet var nickname: UITextField!
-    
-    @IBOutlet var introduce: UITextField!
     
     
-    @IBAction func btnSend(_ sender: UIButton) {
-        bottomText.text = "Hello, I'm \(nickname.text!) \(introduce.text!)"
-    }
-    
-    @IBOutlet var bottomText: UILabel!
+//    @IBOutlet var nickname: UITextField!
+//    
+//    @IBOutlet var introduce: UITextField!
+//    
+//    
+//    @IBAction func btnSend(_ sender: UIButton) {
+//        bottomText.text = "Hello, I'm \(nickname.text!) \(introduce.text!)"
+//    }
+//    
+//    @IBOutlet var bottomText: UILabel!
 }
 
 
