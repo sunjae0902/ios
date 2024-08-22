@@ -49,11 +49,10 @@ struct LoginView: View {
     let logInAction: () -> Void // 로그인 액션 함수를 파라미터로 전달
 
     var body: some View {
-        VStack {
+        VStack{
             Text("프로필 설정")
-                .font(.customBody(for: .medium)).padding(20)
-
-            Spacer()
+                .font(.titleMedium).padding(20)
+            Image("icon/icon_profile").resizable().frame(width: 105,height: 105)
             Button(action: logInAction) {
                 Text("가입하기")
                     .foregroundColor(.white)
@@ -65,11 +64,28 @@ struct LoginView: View {
     }
 }
 
+struct ImageView: View {
+    var body: some View {
+        
+        VStack {
+            HStack {
+                Image("icon/image_cat").resizable().aspectRatio(contentMode: .fit).clipShape(Circle()).shadow(radius: 4, x: 5, y:10).onTapGesture {
+                    print("Tap: This is image")
+                }
+                Image(systemName: "cat.circle").resizable().frame(width:70, height:70).foregroundColor( .blue)
+                Image("icon/image_cat").resizable().clipShape(Rectangle()).overlay(Rectangle().stroke(Color.purple, lineWidth: 4.0))
+                Image("icon/image_cat").resizable().clipShape(RoundedRectangle(cornerRadius: 50))
+            }
+        }
+    }
+}
+
 
 
 struct MainView_Previews: PreviewProvider {
     static var previews: some View {
-        MainView()
+       // MainView()
+        ImageView()
     }
 }
 

@@ -92,7 +92,6 @@
 			isa = PBXGroup;
 			children = (
 				28707CA72C688574008C19D1 /* font */,
-				28707CA82C688579008C19D1 /* icon */,
 				28707CC22C747DC9008C19D1 /* TextStyle.swift */,
 			);
 			path = assets;
@@ -112,13 +111,6 @@
 				28707CAE2C688939008C19D1 /* Pretendard-Thin.ttf */,
 			);
 			path = font;
-			sourceTree = "<group>";
-		};
-		28707CA82C688579008C19D1 /* icon */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = icon;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
