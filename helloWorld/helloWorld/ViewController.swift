@@ -8,24 +8,38 @@
 import UIKit
 
 class ViewController: UIViewController {
+    var imgNum = 1
+    let maxImage = 4
     
+    @IBOutlet var imageView: UIImageView! // outlet 변수 선언
+   
     override func viewDidLoad() {
         super.viewDidLoad()
-        print(#function)
+        imageView.image = UIImage(named: "1.png")
     }
     
     
+    @IBAction func previousAction(_ sender: UIButton) {
+        if(imgNum == 1){
+            imgNum = maxImage
+        }
+        else{
+            imgNum -= 1
+        }
+        imageView.image = UIImage(named: String(imgNum) + ".png")
+    }
     
-//    @IBOutlet var nickname: UITextField!
-//    
-//    @IBOutlet var introduce: UITextField!
-//    
-//    
-//    @IBAction func btnSend(_ sender: UIButton) {
-//        bottomText.text = "Hello, I'm \(nickname.text!) \(introduce.text!)"
-//    }
-//    
-//    @IBOutlet var bottomText: UILabel!
+    
+    @IBAction func nextAction(_ sender: UIButton) {
+        if(imgNum == maxImage){
+            imgNum = 1
+        }
+        else{
+            imgNum += 1
+        }
+        imageView.image = UIImage(named: String(imgNum) + ".png")
+    }
+    
 }
 
 
