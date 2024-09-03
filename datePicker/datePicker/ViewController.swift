@@ -11,6 +11,7 @@ class ViewController: UIViewController {
     let timeSelector: Selector = #selector(ViewController.updateTime)
     let interval = 1.0
     var count = 0
+    var alarmTime = ""
     
     @IBOutlet var curDateTime: UILabel!
     @IBOutlet var selectedDateTime: UILabel!
@@ -26,9 +27,11 @@ class ViewController: UIViewController {
     @IBAction func selectDateTime(_ sender: UIDatePicker) {
         let datePickerView = sender;
         let formatter = DateFormatter()
-        formatter.dateFormat = "yyyy-MM-dd HH:mm EEE"
- // formatter 속성 지정
+        formatter.dateFormat = "yyyy-MM-dd HH:mm EEE" // formatter 속성 지정
         selectedDateTime.text = "선택 시간: " + formatter.string(from: datePickerView.date)
+        
+        formatter.dateFormat = "hh:mm aaa"
+        alarmTime = formatter.string(from: datePickerView.date) // Date -> String
     }
     
     @objc func updateTime(){ // #selector()의 인자로 사용될 경우 -> objc 어노테이션 사용(obj-c코드 사용)
@@ -38,8 +41,20 @@ class ViewController: UIViewController {
         let date = NSDate() // 현재 시간 가져옴
         let formatter = DateFormatter()
         formatter.dateFormat = "yyyy-MM-dd HH:mm:ss EEE"
+        
         curDateTime.text = "현재 시간: " + formatter.string(from: date as Date)
+        
+        formatter.dateFormat = "hh:mm aaa"
+        let currentTime = formatter.string(for: date) // Any? -> String 변환
+        
+        if(currentTime == alarmTime){
+            view.backgroundColor = UIColor.red
+        }
+        else{
+            view.backgroundColor = UIColor.white
+        }
     }
+
     
 }
 
