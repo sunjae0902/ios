@@ -32,7 +32,7 @@ class ViewController: UIViewController {
             self.isOn = false
         })
         let onAction = UIAlertAction(title: "아니요, 켤게요", style: UIAlertAction.Style.default, handler: {
-            ACTION in self.imageView.image = self.imageOn
+            ACTION in self.imageView.image = self.imageOn // 익명 함수
             self.isOn = true
         })
         let removeAction = UIAlertAction(title: "네, 제거할게요", style: UIAlertAction.Style.default, handler: {
