@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct ContentView: View {
+struct DatePickerView: View {
     @State private var currentDate = Date()
     @State private var selectedDate = Date()
     @State private var showAlert = false

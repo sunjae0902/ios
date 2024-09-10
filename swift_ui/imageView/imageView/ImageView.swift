@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct ImageView: View {
     let imagePath = ["1", "2", "3", "4"]
     @State var curIndex = 0
     var body: some View {
